@@ -1,2 +1,2 @@
-# CodeDesignTutorials
-Java 设计模式教程
+# 设计模式教程
+
