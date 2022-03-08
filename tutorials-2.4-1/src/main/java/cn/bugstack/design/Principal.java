@@ -30,5 +30,4 @@ public class Principal {
         mapObj.put("班级平均分", averageScore);
         return mapObj;
     }
-
 }

@@ -56,6 +56,10 @@ public class Teacher {
         return studentList.size();
     }
 
+    public static List<Student> getStudentList() {
+        return studentList;
+    }
+
     public String getName() {
         return name;
     }

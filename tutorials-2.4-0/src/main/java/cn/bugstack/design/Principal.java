@@ -34,7 +34,7 @@ public class Principal {
     // 总分
     public double clazzTotalScore() {
         double totalScore = 0;
-        for (Student stu : teacher.getStudentList()) {
+        for (Student stu : Teacher.getStudentList()) {
             totalScore += stu.getGrade();
         }
         return totalScore;
@@ -43,15 +43,15 @@ public class Principal {
     // 平均分
     public double clazzAverageScore(){
         double totalScore = 0;
-        for (Student stu : teacher.getStudentList()) {
+        for (Student stu : Teacher.getStudentList()) {
             totalScore += stu.getGrade();
         }
-        return totalScore / teacher.getStudentList().size();
+        return totalScore / Teacher.getStudentList().size();
     }
 
     // 班级人数
     public int clazzStudentCount(){
-        return teacher.getStudentList().size();
+        return Teacher.getStudentList().size();
     }
 
 }
