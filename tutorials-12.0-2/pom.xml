@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.bugstack.design</groupId>
-    <artifactId>tutorials-11.0-1</artifactId>
+    <groupId>cn.bugstack.desgin</groupId>
+    <artifactId>tutorials-12.0-2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -42,6 +42,11 @@
                     <groupId>org.slf4j</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cn.bugstack.design</groupId>
+            <artifactId>tutorials-12.0-0</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

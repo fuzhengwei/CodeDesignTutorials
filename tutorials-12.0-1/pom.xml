@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.bugstack.design</groupId>
-    <artifactId>tutorials-11.0-1</artifactId>
+    <artifactId>tutorials-12.0-1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -42,6 +42,11 @@
                     <groupId>org.slf4j</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cn.bugstack.design</groupId>
+            <artifactId>tutorials-12.0-0</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
