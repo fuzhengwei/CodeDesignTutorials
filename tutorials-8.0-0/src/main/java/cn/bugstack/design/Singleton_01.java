@@ -9,7 +9,7 @@ public class Singleton_01 {
 
     public static Singleton_01 getInstance(){
         if (null != instance) return instance;
-        return new Singleton_01();
+        instance = new Singleton_01();
+        return instance;
     }
-
 }
