@@ -1,0 +1,29 @@
+package cn.bugstack.design.cuisine.impl;
+
+import cn.bugstack.design.cook.ICook;
+import cn.bugstack.design.cuisine.ICuisine;
+
+/**
+ * @author 小傅哥，微信：fustack
+ * @description
+ * @date 2022/5/2
+ * @github https://github.com/fuzhengwei/CodeDesignTutorials
+ * @Copyright 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
+ */
+public class GuangDoneCuisine implements ICuisine {
+
+    private ICook cook;
+
+    private GuangDoneCuisine() {
+    }
+
+    public GuangDoneCuisine(ICook cook) {
+        this.cook = cook;
+    }
+
+    @Override
+    public void cook() {
+        cook.doCooking();
+    }
+
+}
