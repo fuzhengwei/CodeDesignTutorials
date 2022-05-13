@@ -42,7 +42,6 @@ public class ApiTest {
         logger.info("测试结果：满减优惠后金额 {}", discountAmount);
     }
 
-
     @Test
     public void test_zk() {
         // 折扣9折，商品100元

@@ -1,0 +1,50 @@
+package cn.bugstack.design;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.Map;
+
+/**
+ * @author 小傅哥，微信：fustack
+ * @description 抽象模板
+ * @date 2022/5/12
+ * @github https://github.com/fuzhengwei/CodeDesignTutorials
+ * @Copyright 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
+ */
+public abstract class NetMall {
+
+    protected Logger logger = LoggerFactory.getLogger(NetMall.class);
+
+    String uId;   // 用户ID
+    String uPwd;  // 用户密码
+
+    public NetMall(String uId, String uPwd) {
+        this.uId = uId;
+        this.uPwd = uPwd;
+    }
+
+    /**
+     * 生成商品推广海报
+     *
+     * @param skuUrl 商品地址(京东、淘宝、当当)
+     * @return 海报图片base64位信息
+     */
+    public String generateGoodsPoster(String skuUrl) {
+        if (!login(uId, uPwd)) return null;             // 1. 验证登录
+
+        Map<String, String> reptile = reptile(skuUrl);  // 2. 爬虫商品
+
+        return createBase64(reptile);                   // 3. 组装海报
+    }
+
+    // 模拟登录
+    protected abstract Boolean login(String uId, String uPwd);
+
+    // 爬虫提取商品信息(登录后的优惠价格)
+    protected abstract Map<String, String> reptile(String skuUrl);
+
+    // 生成商品海报信息
+    protected abstract String createBase64(Map<String, String> goodsInfo);
+
+}
