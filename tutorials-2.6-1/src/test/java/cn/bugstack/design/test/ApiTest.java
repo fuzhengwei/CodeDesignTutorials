@@ -25,11 +25,12 @@ public class ApiTest {
         betUserList.add(new BetUser("笨笨", 89));
         betUserList.add(new BetUser("丑蛋", 10));
 
-        DrawControl drawControl = new DrawControl();
-        List<BetUser> prizeRandomUserList = drawControl.doDraw(new DrawRandom(), betUserList, 3);
+        DrawControl drawControl = new DrawControl(new DrawRandom());
+        List<BetUser> prizeRandomUserList = drawControl.doDraw(betUserList, 3);
         logger.info("随机抽奖，中奖用户名单：{}", JSON.toJSON(prizeRandomUserList));
 
-        List<BetUser> prizeWeightUserList = drawControl.doDraw(new DrawWeightRank(), betUserList, 3);
+        drawControl = new DrawControl(new DrawWeightRank());
+        List<BetUser> prizeWeightUserList = drawControl.doDraw(betUserList, 3);
         logger.info("权重抽奖，中奖用户名单：{}", JSON.toJSON(prizeWeightUserList));
     }
 
