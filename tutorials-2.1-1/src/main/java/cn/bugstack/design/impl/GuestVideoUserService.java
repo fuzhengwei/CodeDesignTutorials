@@ -10,11 +10,11 @@ import cn.bugstack.design.IVideoUserService;
  * @Copyright: 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
 public class GuestVideoUserService implements IVideoUserService {
-
+    @Override
     public void definition() {
         System.out.println("访客用户，视频480P高清");
     }
-
+    @Override
     public void advertisement() {
         System.out.println("访客用户，视频有广告");
     }
