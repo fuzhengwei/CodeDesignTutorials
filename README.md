@@ -22,6 +22,16 @@
 </div>
 <br/>  
 
+---
+
+**设计模式实战项目**：`把设计模式在项目中运用起来，会更加扎实的掌握！`
+
+- [《大营销平台系统》—— 小傅哥第8个项目，前后端 + Dev-Ops 的全栈式综合编程实战DDD项目！](https://bugstack.cn/md/project/big-market/big-market.html)
+- [OpenAi 大模型微服务应用体系构建 - API-SDK、鉴权、公众号、微信支付](https://bugstack.cn/md/zsxq/project/chatgpt.html)
+- [Lottery 分布式抽奖系统 - 基于领域驱动设计的四层架构实践](https://bugstack.cn/md/zsxq/project/lottery.html)
+- [Netty+JavaFx实战：仿桌面版微信聊天](https://bugstack.cn/md/zsxq/project/im.html)
+- [ChatGPT AI 问答助手 - 小型，对接知识星球](https://bugstack.cn/md/zsxq/project/chatbot-api.html)
+
 ## ⛳ 目录
 
 - [书籍下载&购买](https://github.com/fuzhengwei/itstack-demo-design#%E4%B9%A6%E7%B1%8D%E4%B8%8B%E8%BD%BD%E8%B4%AD%E4%B9%B0)
